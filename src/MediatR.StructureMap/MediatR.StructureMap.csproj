@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
+    <AssemblyName>MediatR.StructureMap</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="3.0.1" />
-    <PackageReference Include="structuremap" Version="4.4.3" />
+    <PackageReference Include="StructureMap" Version="4.4.3" />
   </ItemGroup>
 
 </Project>

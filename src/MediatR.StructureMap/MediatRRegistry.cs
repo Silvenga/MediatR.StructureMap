@@ -1,6 +1,6 @@
 ﻿using StructureMap;
 
-namespace MediatR.StrutureMap
+namespace MediatR.StructureMap
 {
     public class MediatRRegistry : Registry
     {
