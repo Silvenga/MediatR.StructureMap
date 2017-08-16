@@ -2,7 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
-    <AssemblyName>MediatR.StructureMap</AssemblyName>
+    
+    <Owners>Silvenga</Owners>
+    <Authors>Silvenga</Authors>
+    <LicenseUrl>https://github.com/Silvenga/MediatR.StructureMap/blob/master/LICENSE</LicenseUrl>
+    <ProjectUrl>https://github.com/Silvenga/MediatR.StructureMap</ProjectUrl>
+    <Description>StructureMap configuration helper for MediatR.</Description>
+    <Tags>StructureMap MediatR</Tags>
+    
   </PropertyGroup>
 
   <ItemGroup>
