@@ -12,8 +12,7 @@ namespace MediatR.StructureMap
                 scanner.WithDefaultConventions();
             });
 
-            For<SingleInstanceFactory>().Use<SingleInstanceFactory>(ctx => t => ctx.GetInstance(t));
-            For<MultiInstanceFactory>().Use<MultiInstanceFactory>(ctx => t => ctx.GetAllInstances(t));
+            For<ServiceFactory>().Use<ServiceFactory>(ctx => ctx.GetInstance);
         }
     }
 }

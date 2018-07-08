@@ -1,19 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
-    
-    <Owners>Silvenga</Owners>
+    <TargetFrameworks>netstandard1.3;netstandard2.0;net45</TargetFrameworks>
+    <Version>0.0.0.1</Version>
     <Authors>Silvenga</Authors>
-    <LicenseUrl>https://github.com/Silvenga/MediatR.StructureMap/blob/master/LICENSE</LicenseUrl>
-    <ProjectUrl>https://github.com/Silvenga/MediatR.StructureMap</ProjectUrl>
+    <PackageLicenseUrl>https://github.com/Silvenga/MediatR.StructureMap/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Silvenga/MediatR.StructureMap</PackageProjectUrl>
     <Description>StructureMap configuration helper for MediatR.</Description>
-    <Tags>StructureMap MediatR</Tags>
-    
+    <PackageTags>StructureMap;MediatR</PackageTags>
+
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="3.0.1" />
+    <PackageReference Include="MediatR" Version="[5,6)" />
     <PackageReference Include="StructureMap" Version="4.4.3" />
   </ItemGroup>
 
