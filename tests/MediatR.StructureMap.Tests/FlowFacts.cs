@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-
 using AutoFixture;
-
 using FluentAssertions;
-
 using StructureMap;
-
 using Xunit;
 
 namespace MediatR.StructureMap.Tests
 {
     public class FlowFacts
     {
-        private static readonly Fixture Autofixture = new Fixture();
+        private static readonly Fixture AutoFixture = new Fixture();
 
         private readonly Container _container;
 
@@ -29,7 +25,7 @@ namespace MediatR.StructureMap.Tests
         public async Task FlowWorks()
         {
             var mediator = _container.GetInstance<IMediator>();
-            var input = Autofixture.Create<QueryFixture.Query>();
+            var input = AutoFixture.Create<QueryFixture.Query>();
 
             // Act
             var result = await mediator.Send(input);
@@ -55,7 +51,7 @@ namespace MediatR.StructureMap.Tests
         {
             public Task<QueryFixture.Result> Handle(QueryFixture.Query message, CancellationToken cancellationToken)
             {
-                return Task.FromResult(new QueryFixture.Result {Output = message.Input});
+                return Task.FromResult(new QueryFixture.Result { Output = message.Input });
             }
         }
     }
