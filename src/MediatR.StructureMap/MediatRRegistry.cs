@@ -6,12 +6,7 @@ namespace MediatR.StructureMap
     {
         public MediatRRegistry()
         {
-            Scan(scanner =>
-            {
-                scanner.AssemblyContainingType<IMediator>();
-                scanner.WithDefaultConventions();
-            });
-
+            For<IMediator>().Use<Mediator>();
             For<ServiceFactory>().Use<ServiceFactory>(ctx => ctx.GetInstance);
         }
     }
