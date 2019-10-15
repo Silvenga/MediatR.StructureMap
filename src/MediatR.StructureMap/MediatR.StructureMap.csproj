@@ -8,7 +8,7 @@
     <PackageProjectUrl>https://github.com/Silvenga/MediatR.StructureMap</PackageProjectUrl>
     <Description>StructureMap configuration helper for MediatR.</Description>
     <PackageTags>StructureMap;MediatR</PackageTags>
-
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>
