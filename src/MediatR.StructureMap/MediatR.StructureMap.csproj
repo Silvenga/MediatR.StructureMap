@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="[6,8)" />
+    <PackageReference Include="MediatR" Version="[6,9)" />
     <PackageReference Include="StructureMap" Version="4.4.3" />
   </ItemGroup>
 
